@@ -36,10 +36,10 @@ const Footer = () => {
     <>
       <h2 className="text-4xl font-bold text-center mb-8">Contact US</h2>
 
-      <div className="flex justify-evenly items-center flex-wrap w-[60%] mx-auto my-8 space-y-4">
+      <div className="flex justify-evenly items-center flex-wrap w-[60%] mx-auto my-8 space-y-4 ">
         <div className="flex items-center bg-pink-50 p-4 rounded-lg cursor-pointer transition-all duration-300 ease-in-out hover:shadow-xl w-full md:w-auto">
           <img src={images.email} alt="email" className="w-10 h-10 mr-4" />
-          <a href="mailto:sudamasolutionstechnologies@gmail.com" className="font-medium">sudamasolutionstechnologies@gmail.com</a>
+          <a href="mailto:sudamasolutionstechnologies@gmail.com" className="font-medium break-all">sudamasolutionstechnologies@gmail.com</a>
         </div>
 
         <div className="flex items-center bg-blue-50 p-4 rounded-lg cursor-pointer transition-all duration-300 ease-in-out hover:shadow-xl w-full md:w-auto">
@@ -96,8 +96,10 @@ const Footer = () => {
         </div>
       )}
 
-      <br />
-      <br />
+      <div className="mx-auto text-center py-5 font-semiboldbold text-lg">
+        <p>Copyright &copy; 2024 Sudama Solutions Technologies Pvt Ltd. All rights reserved.</p>
+      </div>
+
       <br />
     </>
   );
