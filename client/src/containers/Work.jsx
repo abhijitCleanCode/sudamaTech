@@ -91,8 +91,8 @@ const Work = () => {
               </div>
 
               <div className='p-[0.5rem] w-full relative flex flex-col justify-center items-center'>
-                <h3 className="text-[2.75rem] font-[800] text-center color-black capitalize leading-10 mt-[1rem] md:mt-[3rem]">{work.title}</h3>
-                <p className="text-[1.75rem] md:text-[0.8rem] text-left text-gray leading-6 pt-2">{work.description}</p>
+                <h3 className="text-[25px] md:text-[50px] font-[700] text-center text-[##14183E] capitalize leading-10 mt-[1rem] md:mt-[3rem]">{work.title}</h3>
+                <p className="text-[18px] md:text-[1.2rem] text-left text-[#5E6282] leading-6 pt-2">{work.description}</p>
 
                 <div className='absolute py-[0.5rem] px-[1rem] rounded-[10px] bg-white -top-[25px] flex justify-center items-center'>
                   <p className="text-[1.75rem] md:text-[0.8rem] text-left text-gray leading-6">{work.tags[0]}</p>

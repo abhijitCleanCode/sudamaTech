@@ -23,7 +23,7 @@ const About = () => {
 
   return (
     <>
-      <h2 className='text-[2.75rem] font-[800] text-center color-black capitalize'>I Know that <span className='text-[5rem] text-[2.5rem] md:text-[5rem] text-secondary'>Good Apps</span> <br />means  <span className='text-[5rem] text-[2.5rem] md:text-[5rem] text-secondary'>Good Business</span></h2>
+      <h2 className='text-[40px] font-[700] text-center color-black capitalize'>I Know that <span className='text-[5rem] text-[2.5rem] md:text-[5rem] text-secondary'>Good Apps</span> <br />means  <span className='text-[5rem] text-[2.5rem] md:text-[5rem] text-secondary'>Good Business</span></h2>
 
       <div className='w-full flex justify-center items-center flex-wrap'>
         {
@@ -33,10 +33,10 @@ const About = () => {
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 0.5, type: 'tween' }}
               key={about.title + index}
-              className='w-[190px] flex justify-start items-start flex-col m-[2rem] cursor-pointer shadow-md'
+              className='w-full md:w-[220px] flex justify-start items-start flex-col m-[2rem] cursor-pointer shadow-md'
             >
               <img src={urlFor(about.imgUrl)} alt={about.title} className='rounded-lg' />
-              <h2 className='text-[1rem] font-[800] text-black text-left mt-[20px] mx-2'>{about.title}</h2>
+              <h2 className='text-[15px] md:text-[20px] font-[600] text-[#1E1D4C] text-left mt-[20px] mx-2'>{about.title}</h2>
               <p className='text-[1.75rem] md:text-[0.8rem] text-left text-gray line-1.5 mt-[20px] mx-2 pb-2'>{addEllipsis(about.description, 100)}</p>
             </motion.div>
           ))
